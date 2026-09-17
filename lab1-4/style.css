@@ -21,5 +21,6 @@ h2 {
 img {
    width: 380px;
    border: 2px solid #0097a7;
+   display: inline-block;
    margin: 20px, 0px;
 }
