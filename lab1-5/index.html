@@ -2,29 +2,108 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Earth Explorer Survey</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    Earth Explorer Survey
+    <h1>Earth Explorer Survey</h1>
 
-    Earth is home to seven unique continents, each offering amazing landscapes, 
+    <p>Earth is home to seven unique continents, each offering amazing landscapes, 
     diverse wildlife, rich cultures, and unforgettable travel experiences. From
     tropical rainforests and snowy mountains to historic landmarks and beautiful
-    coastlines, every continent has something special to explore.
+    coastlines, every continent has something special to explore.</p>
 
-    Learn more about the world's continents, then complete the survey to share
-    your travel interests and dream destinations.
+    <p>Learn more about the world's continents, then complete the survey to share
+    your travel interests and dream destinations.</p>
 
-    <!-- Create the continent table here -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Continent</th>
+                <th scope="col">What Can You Explore?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Africa</th>
+                <td>Wildlife, Deserts, and Exciting Safari Adventures!</td>
+            </tr>
+            <tr>
+                <th scope="row">Antarctica</th>
+                <td>Glaciar, Penguins, and Breathtaking Ice Landscapes!</td>
+            </tr>
+            <tr>
+                <th scope="row">Asia</th>
+                <td>Mountains, Rainforest, Ancient Temples, and Vibrant Cultures!</td>
+            </tr>
+            <tr>
+                <th scope="row">Europe</th>
+                <td>Historic Cities, Castle, Museums, and Scenic Countrysides!</td>
+            </tr>
+            <tr>
+                <th scope="row">North America</th>
+                <td>National Parks, Forests, Canyons, and Beautiful Lakes!</td>
+            </tr>
+            <tr>
+                <th scope="row">Australia</th>
+                <td>Coral Reefs, Beaches, Unique Wildlife, and The Outback!</td>
+            </tr>
+            <tr>
+                <th scope="row">SouthAmerica</th>
+                <td>Amazon Rainforests, Andes Mountains, and Spectacular Waterfalls!</td>
+            </tr>
+        </tbody>
+    </table>
 
-    Share Your Travel Interests
+    <h2>Share Your Travel Interests</h2>
 
-    Tell us about the places you would most like to visit by completing the survey below.
+    <p>Tell us about the places you would most like to visit by completing the survey below.</p>
 
-    <!-- Create the survey form here -->
-
+    <form id="form">
+        <div>
+            <label for="name" id="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name"/>
+        </div>
+        <div>
+            <label for="email" id="email">Email</label>
+            <input type="text" id="email" placeholder="Enter Your Email"/>
+        </div>
+        <div>
+            <label for="continent" id="continent">What Continent Do You Want To Visit?</label>
+            <select name="continent" id="continent">
+                <option value="africa">Africa</option>
+                <option value="antarctica">Antarctica</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europe</option>
+                <option value="northAmerica">North America</option>
+                <option value="australia">Australia</option>
+                <option value="southAmerica">South America</option>
+            </select>
+        </div>
+        <div>
+            <p>Select What Interests You Most:</p>
+            <input type="radio" id="nature" name="interest" value="nature" checked/>
+            <label for="nature">Nature</label>
+            <input type="radio" id="wildlife" name="interest" values="wildlife" checked/>
+            <label for="wildlife">Wildlife</label>
+            <input type="radio" id="history" name="interest" values="history" checked/>
+            <label for="history">History</label>
+        </div>
+        <div>
+            <label for="comments" id="comments">Tell Us What You Would Like To Discover:</label>
+            <input type="textarea" id="comments" name="comments" cols="30" rows="4"/>
+        </div>
+        <div>
+            <label for="updates" id="updates">Email Updates?</label>
+            <input type="checkbox" id="updates" name="updates"/>
+        </div>
+        <div>
+            <input type="submit" value="Submit Survey"/>
+        </div>
+    </form>
 </body>
 
 </html>
