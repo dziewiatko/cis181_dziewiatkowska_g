@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Earth Explorer Survey</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                 <td>Coral Reefs, Beaches, Unique Wildlife, and The Outback!</td>
             </tr>
             <tr>
-                <th scope="row">SouthAmerica</th>
+                <th scope="row">South America</th>
                 <td>Amazon Rainforests, Andes Mountains, and Spectacular Waterfalls!</td>
             </tr>
         </tbody>
@@ -62,18 +62,18 @@
 
     <p>Tell us about the places you would most like to visit by completing the survey below.</p>
 
-    <form id="form">
+    <form method="post" action="https://httpbin.org/post">
         <div>
-            <label for="name" id="name">Name</label>
-            <input type="text" id="name" placeholder="Enter Your Name"/>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name"/>
         </div>
         <div>
-            <label for="email" id="email">Email</label>
-            <input type="text" id="email" placeholder="Enter Your Email"/>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" placeholder="Enter Your Email"/>
         </div>
         <div>
-            <label for="continent" id="continent">What Continent Do You Want To Visit?</label>
-            <select name="continent" id="continent">
+            <label for="continent">What Continent Do You Want To Visit?</label>
+            <select id="continent" name="continent">
                 <option value="africa">Africa</option>
                 <option value="antarctica">Antarctica</option>
                 <option value="asia">Asia</option>
@@ -85,22 +85,20 @@
         </div>
         <div>
             <p>Select What Interests You Most:</p>
-            <input type="radio" id="nature" name="interest" value="nature" checked/>
+            <input type="radio" id="nature" name="interest" value="nature"/>
             <label for="nature">Nature</label>
-            <input type="radio" id="wildlife" name="interest" values="wildlife" checked/>
+            <input type="radio" id="wildlife" name="interest" value="wildlife"/>
             <label for="wildlife">Wildlife</label>
-            <input type="radio" id="history" name="interest" values="history" checked/>
+            <input type="radio" id="history" name="interest" value="history"/>
             <label for="history">History</label>
         </div>
         <div>
-            <label for="comments" id="comments">Tell Us What You Would Like To Discover:</label>
+            <label for="comments">Tell Us What You Would Like To Discover:</label>
+            <textarea id="comments" name="comments" cols="30" rows="4"></textarea>
         </div>
         <div>
-            <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
-        </div>
-        <div>
-            <label for="updates" id="updates">Email Updates?</label>
-            <input type="checkbox" id="updates" name="updates"/>
+            <label for="updates" id="updates">Update Me On Travel Ideas & Destinations</label>
+            <input type="checkbox" id="updates" name="updates" checked/>
         </div>
         <div>
             <input type="submit" value="Submit Survey"/>

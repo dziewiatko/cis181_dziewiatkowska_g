@@ -50,6 +50,10 @@ input, select, textarea{
     margin-bottom: 10px;
     font-family: Verdana, Arial, sans-serif;
     font-size: 12px;
+    
+}
+textarea{
+    display:block;
 }
 input[type="radio"]{
     margin-top: 12px;
