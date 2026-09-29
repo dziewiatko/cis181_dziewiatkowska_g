@@ -40,6 +40,7 @@ td{
 }
 
 form{
+    display:inline-block;
     margin-top: 35px;
 }
 
@@ -52,14 +53,11 @@ input, select, textarea{
     font-size: 12px;
     
 }
-textarea{
-    display:block;
-}
-input[type="radio"]{
-    margin-top: 12px;
-}
 label[for="nature"], label[for="wildlife"], label[for="history"]{
+    display:inline-block;
     margin-right: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 input[type="submit"]{
     background-color: #0097A7;
@@ -69,4 +67,11 @@ input[type="submit"]{
     padding-bottom: 8px;
     padding-left: 16px;
     padding-right: 16px;
+}
+fieldset{
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 18px;
+    border: 1px solid #b8c2cc;
+    border-radius: 6px;
 }
