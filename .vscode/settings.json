@@ -3,5 +3,6 @@
     "editor.inlineSuggest.edits.allowCodeShifting": "never",
     "editor.inlineSuggest.edits.renderSideBySide": "never",
     "editor.inlineSuggest.enabled": false,
-    "editor.inlineSuggest.showToolbar": "never"
+    "editor.inlineSuggest.showToolbar": "never",
+    "liveServer.settings.port": 5501
 }
