@@ -7,11 +7,19 @@ body {
     padding-right: 40px;
 }
 
+/* sets the font family, the first font is the default,
+if the first font doesn't work the browser goes to the second font,
+and then to the third if the second doesn't work. */
 h1,
 h2 {
     font-family: Georgia, "Times New Roman", serif;
 }
 
+/* sets the color of the text to black,
+sets font size to 52px,
+sets letterspacing to 2px,
+sets the text shadow to be an offwhite color
+sets the text shadow to be 1px top/bottom and 2px left/right. */
 h1 {
     color: #1A1A1A;
     font-size: 52px;
@@ -19,27 +27,33 @@ h1 {
     text-shadow: 1px 1px 2px #D5D5D5;
 }
 
+/* sets the text color to be light blue,
+sets the font to be 28px */
 h2 {
     color: #0097A7;
     font-size: 28px;
 }
 
+/* sets width to be 380px to which the height will automatically adjust to,
+sets the border to be solid, 2px's thick, and a blue color. */
 img {
     width: 380px;
     border: 2px solid #0097A7;
-    margin: 20px 0;
-
 }
 
-div.earth-info {
-    display: flex;
-}
-
+/* the border collaps property sets it so that all the cells are combined 
+into one table rather then being multiple seperate cells,
+the margin is 50px to the bottom and top of the table. */
 table {
     border-collapse: collapse;
     margin-bottom: 50px;
 }
 
+/* gives the labels at the top of the table a 1px thick border,
+the border is solid and a green color,
+the backgorund of the th cell is light blue while the text is a darker blue,
+the padding around the text is 8px (which also helps decide the size of the cell),
+the text is align to the left of its cell in the table*/ 
 th {
     border: 1px solid #2E8B57;
     background-color: #D9F3F5;
@@ -48,15 +62,24 @@ th {
     text-align: left;
 }
 
+/* gives the coutry names and there descriptions a green color,
+adds an 8px border around them. */
 td {
     border: 1px solid #2E8B57;
     padding: 8px;
 }
 
+/* gives a 35px top margin to the form container */
 form {
     margin-top: 35px;
 }
 
+/* for the containers input, select and textarea,
+sets border to 1px thick, border is solid, and a green color,
+sets the top margin to 5px,
+sets bottom margin to 10px,
+sets font-family (as stated early if one doesnt work it moves to the next font in the family),
+sets the font size to 12px; */
 input,
 select,
 textarea {
@@ -68,14 +91,21 @@ textarea {
     font-size: 12px;
 }
 
+
+/* sets a top margin of 12px for the radio button */
 input[type="radio"] {
     margin-top: 12px;
 }
 
+/* sets a right margin of 24px for the radio button */
 input[type="radio"] + label {
     margin-right: 24px;
 }
 
+/* sets a blue background color for submit button,
+sets the color of the text to white,
+removes border,
+adds 8px top/bottom padding and 16px left/right padding*/
 input[type="submit"] {
     background-color: #0097A7;
     color: white;
@@ -83,27 +113,72 @@ input[type="submit"] {
     padding: 8px 16px;
 }
 
-div.page-wrapper{
-    padding: 1em, 2em;
+
+/* set the color for every state of interacting with the link */
+a{
+    color: #0097A7;
+}
+
+a:visited{
+    color: #7800a7;
+}
+
+a:hover{
+    color: #06a700;
+}
+
+a:active{
+    color:#a70000;
+}
+
+
+/* displays the contents as a float and moves it to the left of text
+IMPORTANT: ORDER MATTERS the element being floated MUST appear before the text*/
+#earth-image{
+    float: right;
+}
+
+/* Contains all the content on the page, 
+the padding keeps the content form going edge to edge,
+the max-width keeps the content from growing larger then 960px but allows it to be smaller,
+the margin is set to 0 for top and bottom and to auto for left and right*/
+.page-wrapper{
+    padding: 1em 2em;
     max-width: 960px;
     margin: 0 auto;
 }
 
-main.content{
-    width: auto;
+/* Contains the main content of the index page (the image, text, and the list)
+but excludes the header and footer */
+.content{
+    max-width: 1000px;
+    line-height: 15px;
 }
 
-main.survey-content{
-    width: auto;
+/* Contains the main content of the index page (the survey and the table)
+but excludes the header and footer */
+.survey-content{
+    max-width: 1000px;
+    line-height: 15px;
 }
 
-div.clear{
+/* clears the float so that it doesn't affect the following text */
+.clear{
     clear: both;
 }
 
+/* sets 10px margin only to the bottom,
+set background color of the header/footer,
+adds padding around the text */
 header, footer{
-    width: 80rem;
+    padding: 5px 50px;
+    background-color: #b0f1f8;
+    margin: 0px 10px 0px;
 }
-footer{
+
+/* gives the footer a blue color,
+sets a 20px top and bottom margin. */
+footer{    
+    margin: 20px 0;
     color: #0097A7;
 }
