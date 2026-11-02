@@ -1,20 +1,20 @@
-/* CIS181 Applied Lab 2-3 — Lessons 2-3 and 2-4 */
-
-/* ==========================================
-   Lab 1-4: CSS Foundations (Do not Modify)
-   ========================================== */
 body {
-    background-color: #FCFCFC;
+    background: #eaf4f4;
     color: #4A4A4A;
     font-family: Verdana, Arial, sans-serif;
     font-size: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-h1,
-h2 {
-    font-family: Georgia, "Times New Roman", serif;
+/* ============================================HEADER============================================ */
+
+header{
+    padding: 20px;
+    background: #d9f3f5;
+    border-bottom: 4px solid #0097A7;
 }
 
 h1 {
@@ -29,17 +29,70 @@ h2 {
     font-size: 28px;
 }
 
+.navigation a {
+    padding: 8px;
+    margin: 3px;
+    color: #D9F3F5;
+    background-color: #006d77;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ============================================TOP============================================ */
+
+.top {
+    display: flex;
+    direction: row;
+}
+
+.sidebar{
+    background: #f5ffff;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.sidebar p{
+    border-bottom: 1px solid #afafaf;
+}
+
+h3{
+    border-bottom: 2px solid #0097A7;
+}
+
+.more{
+    display: flex;
+    flex-direction: column;
+}
+
+.more a {
+    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #afafaf;
+}
+    
+/* ============================================CENTER============================================ */
+.center{
+    display: flex;
+    justify-content: center;
+}
+
 img {
     width: 380px;
     border: 2px solid #0097A7;
 }
 
-/* ==========================================
-   Lab 1-5: Tables and Forms - Start Here!
-   ========================================== */
+/* ============================================BOTTOM============================================ */
+a{
+    color: #0097A7;
+}
+/* ============================================FOOTER============================================ */
+footer {
+    padding: 20px;
+    background: #d9f3f5;
+    border-top: 4px solid #0097A7;
+}
 
-/* Table Styling */
-
+/* ============================================TABLE============================================ */
 table {
     border-collapse: collapse;
     margin-bottom: 50px;
@@ -58,14 +111,10 @@ td {
     padding: 8px;
 }
 
-
-/* Form Styling */
-
+/* ============================================FORM============================================ */
 form {
     margin-top: 35px;
 }
-
-
 
 input,
 select,
@@ -91,97 +140,5 @@ input[type="submit"] {
     color: white;
     border: none;
     padding: 8px 16px;
-}
-
-
-/* ==========================================
-   Lab 2-1: Shared Earth Explorer Layout
-   ========================================== */
-body {
-    display: flex;
-    flex-direction: row;
-    background: #eaf4f4;
-    margin: 0;
-    padding: 0;
-}
-
-.page-wrapper {
-    width: 1105px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1em 2em;
-}
-
-header,
-footer {
-    padding: 1em 2em;
-    background: #d9f3f5;
-}
-
-header { border-bottom: 4px solid #0097a7; }
-footer { clear: both; margin-top: 2em; border-top: 2px solid #2e8b57; }
-.content,
-.survey-content { padding: 1em 0; }
-.content { min-height: 420px; }
-
-a:link { color: #006d77; }
-a:visited { color: #5b4b8a; }
-a:hover { color: #c85a17; }
-a:active { color: #b03a2e; }
-a:focus { outline: 3px solid #f4a261; text-decoration: underline; }
-
-#earth-image {
-    float: right;
-    margin: 0 0 1em 2em;
-}
-.clear { clear: right; }
-
-.nav-list{
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;  
-    list-style:none; 
-    margin: 0;
-    padding: 0;
-    text-decoration: underline;
-}
-.nav-list a{
-    
-    display: block;
-    padding: 0.7rem 1rem;
-    color: #00383d;
-    text-decoration: none;
-}
-
-.nav-list a:hover{
-    background-color: #8f5faf;
-}
-
-.nav-list a:focus-visible{
-    outline: 3px solid #2E8B57;
-    outline-offset: 3px;
-}
-
-.nav-list [aria-current="page"]{
     font-weight: bold;
-    border-bottom: 3px solid currentColor;
-    background-color: #81dba8;
-}
-
-.nav-list a:active{
-    background-color: #4e7e9e;
-}
-.sidebar{
-    display: flex;
-    justify-content: center;
-    background-color: #006d77;
-}
-
-.wrapper {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    color: #00383d;
 }
