@@ -1,153 +1,266 @@
-/* CIS181 Applied Lab 2-5 — Lessons 2-5 and 2-6 */
 
-/* ==========================================
-   Lab 1-4: CSS Foundations (Do not Modify)
-   ========================================== */
+/* 15 ÷ 16 = 0.9375 = 0.94em */
 body {
-    background-color: #FCFCFC;
+    background: #eaf4f4;
     color: #4A4A4A;
     font-family: Verdana, Arial, sans-serif;
-    font-size: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
+    font-size: 0.94em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1,
-h2 {
-    font-family: Georgia, "Times New Roman", serif;
+/* =============================HEADER============================= */
+
+/* 1105 ÷ 1280 = 0.86328125 = 86.33% */
+header{
+    max-width: 1105px;
+    width: 86.33%;
+    padding: 20px;
+    background: #d9f3f5;
+    border-bottom: 4px solid #0097A7;
 }
 
+/* 52 ÷ 16 = 3.25 = 3.25em */
+/* 2 ÷ 16 = 0.125 = 0.13em*/
+/* 1 ÷ 16 = 0.0625 = 0.06em */
 h1 {
+    
     color: #1A1A1A;
-    font-size: 52px;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 2px #D5D5D5;
+    font-size: 3.25em;
+    letter-spacing: 0.13em;
+    text-shadow: 0.06em 0.06em 0.13em #D5D5D5;
 }
 
+/* 28 ÷ 16 = 1.75 = 1.75em */
 h2 {
     color: #0097A7;
-    font-size: 28px;
+    font-size: 1.75em;
 }
 
+/* 8 ÷ 16 = 0.5 = 0.5em */
+/* 3 ÷ 16 = 0.1875 = 0.19em */
+.navigation a {
+    padding: 0.5em;
+    margin: 0.19em;
+    color: #D9F3F5;
+    background-color: #006d77;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a:hover{
+    background-color: #2E8B57;
+}
+
+.navigation a:visited{
+    color: #c2ddd3;
+}
+    
+
+/* =============================TOP============================= */
+
+/* 1105 ÷ 1280 = 0.86328125 = 86.33% */
+.top {
+    max-width: 1105px;
+    width: 86.33%;
+    display: flex;
+    direction: row;
+    justify-content: center;
+}
+
+/* 750 ÷ 1105 = 0.678733032 = 67.87% */
+.text{
+    width: 67.87%;
+}
+
+/* 350 ÷ 1105 = 0.316742081 = 31.67% */
+/* 10 ÷ 16 = 0.625 = 0.63em */
+/* 20 ÷ 16 = 1.25 = 1.25em */
+.sidebar{
+    width: 31.67%;
+    background: #f5ffff;
+    padding: 0.63em;
+    margin-left: 1.25em;
+}
+
+/* 1 ÷ 16 = 0.0625 = 0.06em */
+.sidebar p{
+    border-bottom: 0.06em solid #afafaf;
+}
+
+/* 2 ÷ 16 = 0.025 = 0.03em */
+h3{
+    border-bottom: 0.03em solid #0097A7;
+}
+
+.more{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 5 ÷ 16 = 0.3125 = 0.31em */
+/* 1 ÷ 16 = 0.0625 = 0.06em */
+.more a {
+    margin:  0.31em 0;
+    padding: 0.31em 0;
+    border-bottom: 0.06em solid #afafaf;
+}
+
+.more a:hover {
+    color: #2E8B57;
+}
+    
+/* =============================CENTER============================= */
+
+/* 1105 ÷ 1280 = 0.86328125 = 86.33% */
+.center{
+    max-width: 1105px;
+    width: 86.33%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 380 ÷ 1105 = 0.343891403 = 34.39% */
+/* 2 ÷ 16 = 0.125 = 0.13em*/
+/* 4 ÷ 16 = 0.25 = 0.25em */
 img {
-    width: 380px;
-    border: 2px solid #0097A7;
-    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+    width: 34.39%;
+    border: 0.13em solid #0097A7;
 }
 
-/* ==========================================
-   Lab 1-5: Tables and Forms - Start Here!
-   ========================================== */
+/* =============================BOTTOM============================= */
 
-/* Table Styling */
+/* 1105 ÷ 1280 = 0.86328125 = 86.33% */
+.bottom{
+    max-width: 1105px;
+    width: 86.33%;
+}
+.bottom a{
+    color: #0097A7;
+}
 
+.bottom a:hover{
+    color: #2E8B57;
+}
+
+/* =============================FOOTER============================= */
+
+/* 1105 ÷ 1280 = 0.86328125 = 86.33% */
+/* 20 ÷ 16 = 1.25 = 1.25em */
+/* 4 ÷ 16 = 0.25 = 0.25em */
+footer {
+    max-width: 1105px;
+    width: 86.33%;
+    padding: 1.25em;
+    background: #d9f3f5;
+    border-top: 0.25em solid #0097A7;
+}
+
+/* =============================TABLE============================= */
+
+/* 1105 ÷ 1280 = 0.86328125 = 86.33% */
+/* 35 ÷ 16 = 2.1875 = 2.19em */
+.wrapper{
+    max-width: 1105px;
+    width: 86.33%;
+}
+
+/* 50 ÷ 16 = 3.25 = 3.25em */
 table {
     border-collapse: collapse;
-    margin-bottom: 50px;
+    margin-bottom: 3.25em;
 }
 
+/* 1 ÷ 16 = 0.0625 = 0.06em */
+/* 8 ÷ 16 = 0.5 = 0.5em */
 th {
-    border: 1px solid #2E8B57;
+    border: 0.06em solid #2E8B57;
     background-color: #D9F3F5;
     color: #0097A7;
-    padding: 8px;
+    padding: 0.5em;
     text-align: left;
 }
 
+/* 1 ÷ 16 = 0.0625 = 0.06em */
+/* 8 ÷ 16 = 0.5 = 0.5em */
 td {
-    border: 1px solid #2E8B57;
-    padding: 8px;
+    border: 0.06em solid #2E8B57;
+    padding: 0.5em;
 }
 
+/* =============================FORM============================= */
 
-/* Form Styling */
+/* 1105 ÷ 1280 = 0.86328125 = 86.33% */
+/* 35 ÷ 16 = 2.1875 = 2.19em */
+.survey{
+    max-width: 1105px;
+    width: 86.33%;
+}
 
 form {
-    margin-top: 35px;
+    margin-top: 2.19em;
 }
 
-
-
+/* 1 ÷ 16 = 0.0625 = 0.06em */
+/* 5 ÷ 16 = 0.3125 = 0.31em */
+/* 10 ÷ 16 = 0.625 = 0.63em */
+/* 12 ÷ 16 = 0.75 = 0.75em */
 input,
 select,
 textarea {
-    border: 1px solid #2E8B57;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    border: 0.06em solid #2E8B57;
+    padding: 0.31em;
+    margin-top: 0.31em;
+    margin-bottom: 0.63em;
     font-family: Verdana, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
+/* 12 ÷ 16 = 0.75 = 0.75em */
 input[type="radio"] {
-    margin-top: 12px;
+    margin-top: 0.75em;
 }
 
+/* 24 ÷ 16 = 1.5 = 1.5em */
 input[type="radio"] + label {
-    margin-right: 24px;
+    margin-right: 1.5em;
 }
 
+/* 8 ÷ 16 = 0.5 = 0.5em */
+/* 16 ÷ 16 = 1 = 1em */
 input[type="submit"] {
     background-color: #0097A7;
     color: white;
     border: none;
-    padding: 8px 16px;
+    padding: 0.5em 1em;
+    font-weight: bold;
 }
 
-
-/* ==========================================
-   Lab 2-1: Shared Earth Explorer Layout
-   ========================================== */
-body {
-    background: #eaf4f4;
-    margin: 0;
-    padding: 0;
+input[type="submit"]:hover{
+    background-color: #2E8B57;
 }
 
-.page-wrapper {
-    width: 1105px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1em 2em;
+/* =============================@MEDIA============================= */
+
+@media (max-width: 768px){
+    /* 8 ÷ 16 = 0.5 = 0.5em */
+    .top{
+        flex-direction: column-reverse;
+    }
+
+    .sidebar{
+        margin-left: 0;
+    }
+    
+    header, .top, .text, .sidebar, .middle, .bottom, .survey, .wrapper, footer{
+        width: 90%;
+    }
+
+    img{
+        width: 90%;
+    }
 }
-
-header,
-footer {
-    padding: 1em 2em;
-    background: #d9f3f5;
-}
-
-header { border-bottom: 4px solid #0097a7; }
-footer { clear: both; margin-top: 2em; border-top: 2px solid #2e8b57; }
-.content,
-.survey-content { padding: 1em 0; }
-.content { min-height: 420px; }
-
-a:link { color: #006d77; }
-a:visited { color: #5b4b8a; }
-a:hover { color: #c85a17; }
-a:active { color: #b03a2e; }
-a:focus { outline: 3px solid #f4a261; text-decoration: underline; }
-
-#earth-image {
-    float: right;
-    margin: 0 0 1em 2em;
-}
-.clear { clear: right; }
-
-
-/* ==========================================
-   Lab 2-3: Navigation and Discover Earth Sidebar
-   ========================================== */
-nav ul,
-.sidebar ul { margin: 0; padding: 0; list-style-type: none; }
-nav li { display: inline-block; margin-right: 0.5em; }
-nav a { display: block; padding: 0.55em 0.8em; background: #006d77; color: #ffffff; text-decoration: none; }
-nav a:hover,
-nav a:focus { background: #c85a17; color: #ffffff; }
-
-.content { float: left; width: 730px; }
-.sidebar { float: right; width: 330px; padding: 1em; background: #f4f9f5; }
-.wrapper { width: 100%; }
-.sidebar h3 { margin: 0 0 0.5em; padding-bottom: 0.35em; border-bottom: 2px solid #2e8b57; font-size: 20px; text-transform: uppercase; }
-.sidebar li { padding: 0.5em 0; border-bottom: 1px solid #b7d6c2; }
